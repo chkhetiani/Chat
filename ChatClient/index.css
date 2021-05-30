@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  border: 5px solid blue;
+  width: 200px;
+}
+
+.main {
+  border: 5px solid red;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex-grow: 1;
+  border: 5px solid green;
+}
+
+.send-message {
+  height: 100px;
+  border: 5px solid yellow;
+}
