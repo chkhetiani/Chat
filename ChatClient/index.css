@@ -8,12 +8,11 @@ body {
 }
 
 .sidebar {
-  border: 5px solid blue;
   width: 200px;
+  background-color: #98c1d9;
 }
 
 .main {
-  border: 5px solid red;
   flex-grow: 1;
 
   display: flex;
@@ -22,10 +21,59 @@ body {
 
 .messages {
   flex-grow: 1;
-  border: 5px solid green;
+  background-color: #e0fbfc;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .send-message {
   height: 100px;
-  border: 5px solid yellow;
+  background-color: #3d5a80;
+  display: flex;
+  align-items: center;
+}
+
+.textInput {
+  width: 60%;
+  height: 60px;
+  margin: 15px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sendButton {
+  width: 70px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+.sendButton:hover {
+  cursor: pointer;
+  background-color: #d1faff;
+}
+
+.message {
+  background-color: #c2c2c2;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px 10px 10px 10px;
+  word-wrap: break-word;
+  min-height: 50px;
+  max-width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.myMessage {
+  background-color: #42bdff;
+  align-self: flex-end;
+  width: 500px;
 }
