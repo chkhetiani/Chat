@@ -5,14 +5,14 @@ const messages = [];
 
 const server = express();
 server.use(cors());
+server.use(express.json());
 
 server.post('/send', (request, response) => {
-    console.log('hello');
+    messages.push(request.body);
     return response.send('sent');
 });
 
 server.get('/messages', (request, response) => {
-    console.log('messages');
     return response.send(messages);
 })
 
